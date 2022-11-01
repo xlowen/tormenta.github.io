@@ -1,0 +1,426 @@
+/* Size for brand */
+nav .navbar-brand {
+    font-size: xx-large;
+}
+
+/* Colors for brand */
+nav .navbar-brand .blue {
+    color: #537fbe;
+}
+
+nav .navbar-brand .red {
+    color: #ea433b;
+}
+
+nav .navbar-brand .yellow {
+    color: #f5b82e;
+}
+
+nav .navbar-brand .green {
+    color: #2e944b;
+}
+
+/* color for body */
+body {
+    background-color: #e5e0da;
+}
+
+.tormfont {
+    font-family: "Cormorant sc", sans-serif;
+    font-weight: 700;
+    font-size: 30pt;
+    color: #45020f;
+}
+
+.frontfont {
+    font-family: "Cormorant sc", sans-serif;
+    font-weight: 700;
+    font-size: 18pt;
+    color: #45020f;
+
+}
+
+.sizemain {
+    max-width: 80%;
+    margin: auto;
+}
+
+.sizemain:hover {
+    font-size: 20pt;
+    transition: 1s ease-in-out;
+    background-color: black;
+    color: white;
+    border-radius: 20%;
+}
+
+.sizemain:not(:hover) {
+    transition: 1s ease-out;
+}
+
+.hrvdimg {
+    width: 40%;
+    height: auto;
+}
+
+.mybg {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-sizing: border-box;
+    max-width: 40%;
+    font-family: "Cormorant sc", sans-serif;
+    color: #c62b30;
+    min-width: 250px;
+}
+
+.myli {
+    font-family: Cinzel, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.mylif {
+    font-family: Cinzel, sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    background: white;
+}
+
+.mylif1 {
+    font-family: Cinzel, sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    background: white;
+}
+
+.mybgf {
+    background-color: #ffffff;
+    border-radius: 10px;
+    font-family: "Cormorant sc", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #c62b30;
+    min-width: 180px;
+}
+
+.mybgd {
+    background-color: #ffffff;
+    border: 1px solid #45020f;
+    border-radius: 10px;
+    min-width: 320px;
+}
+
+.mybtn {
+    background-color: #ffffff;
+    border-radius: 10px;
+    font-family: "Cormorant sc", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #c62b30;
+    border: none;
+}
+
+.mybtn:focus:hover {
+    border: 1px solid #45020f;
+}
+
+.mybtn1 {
+    border: none;
+}
+
+.mybtn1:hover::placeholder {
+    text-decoration: underline;
+}
+
+.mybtn1::placeholder {
+    color: #45020f;
+    text-align: center;
+}
+
+.mybtn1:focus {
+    outline: thin dotted;
+    color: #45020f;
+}
+
+#filter {
+    min-width: 160px;
+}
+
+.mylif:hover {
+    background-color: #45020f;
+    transition: 0.5s ease-in;
+    transition-duration: height 0.5s;
+    border: 5px solid #f9aa46;
+    font-family: Cinzel, sans-serif;
+    font-size: 40px;
+    color: white;
+}
+
+.mylif:not(:hover) {
+    font-family: Cinzel, sans-serif;
+    transition: 0.5s ease-out;
+    border: 1px solid white;
+}
+
+.mylif1:hover {
+    background-color: #f9aa46;
+    transition: 0.5s ease-in;
+    transition-duration: height 0.5s;
+    border: 5px solid #45020f;
+    font-family: Cinzel, sans-serif;
+    font-size: 40px;
+    color: black;
+}
+
+.mylif1:not(:hover) {
+    font-family: Cinzel, sans-serif;
+    transition: 0.5s ease-out;
+    border: 1px solid white;
+}
+
+.clrlnk {
+    color: #45020f;
+    text-decoration: none;
+}
+
+.mytable {
+    border: 5px solid black;
+    margin: auto;
+    border-radius: 15px;
+    font-family: Cinzel, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    min-width: 250px;
+    overflow: hidden;
+}
+
+.mytabler {
+    border: 2px solid black;
+    margin: auto;
+    font-family: Cinzel, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    min-width: 250px;
+    overflow: hidden;
+}
+
+/* .colstyle:nth-of-type(even) {
+    color: #c62b30;
+} */
+
+.rowstyle:nth-of-type(even) {
+    background-color: #45020fCC;
+    color: white;
+}
+
+.rowstyle:nth-of-type(even):hover {
+    background-color: #45020fAA;
+
+}
+
+.rowstyle:nth-of-type(odd) {
+    background-color: #1f1f21CC;
+    color: white;
+}
+
+.rowstyle:nth-of-type(odd):hover {
+    background-color: #1f1f21AA;
+}
+
+.rowstyled:nth-of-type(even) {
+    background-color: #878322CC;
+    color: white;
+}
+
+.rowstyled:nth-of-type(even):hover {
+    background-color: #878322AA;
+
+}
+
+.rowstyled:nth-of-type(odd) {
+    background-color: #1f1f21CC;
+    color: white;
+}
+
+.rowstyled:nth-of-type(odd):hover {
+    background-color: #1f1f21AA;
+}
+
+
+.mainw {
+    margin-top: 70px;
+    min-width: 320px;
+}
+
+#cont {
+    border-color: #45020f;
+}
+
+.fulldesc {
+    background: lightcyan;
+    border: 2px solid #45020f;
+    font-size: 16px;
+}
+
+.rowstyletop {
+    font-size: 20px;
+    color: #45020f;
+}
+
+.colorbr {
+    color: #45020f;
+}
+
+.colorbr::placeholder {
+    color: #45020f;
+}
+
+.prio1 {
+    max-width: 70px;
+}
+
+.prio2 {
+    min-width: 130px;
+}
+
+/* .prio2s {
+    min-width: 130px;
+    font-size: 16px;
+    color: #ea433b
+} */
+
+.prio9 {
+    display: none;
+}
+
+@media screen and (max-width: 1200px) {
+    .prio8 {
+        display: none;
+    }
+
+    .prio9 {
+        display: initial;
+    }
+
+    .prio1 {
+        min-width: 100px;
+    }
+}
+
+@media screen and (max-width: 993px) {
+    .prio8 {
+        display: none;
+    }
+
+    .prio7 {
+        display: none;
+    }
+
+    .prio9 {
+        max-width: 30px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .prio8 {
+        display: none;
+    }
+
+    .prio7 {
+        display: none;
+    }
+
+    .prio6 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .prio8 {
+        display: none;
+    }
+
+    .prio7 {
+        display: none;
+    }
+
+    .prio6 {
+        display: none;
+    }
+
+    .prio5 {
+        display: none;
+    }
+
+    .resizemain {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 554px) {
+    .prio8 {
+        display: none;
+    }
+
+    .prio7 {
+        display: none;
+    }
+
+    .prio6 {
+        display: none;
+    }
+
+    .prio5 {
+        display: none;
+    }
+
+    .prio4 {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 522px) {
+    .resizemain {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 466px) {
+    .prio8 {
+        display: none;
+    }
+
+    .prio7 {
+        display: none;
+    }
+
+    .prio6 {
+        display: none;
+    }
+
+    .prio5 {
+        display: none;
+    }
+
+    .prio4 {
+        display: none;
+    }
+
+    .prio3 {
+        display: none;
+    }
+
+    .prio9 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 423px) {
+    .imgfltr {
+        margin-top: 40px;
+    }
+}

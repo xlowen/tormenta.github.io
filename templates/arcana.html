@@ -1,0 +1,62 @@
+{% extends "layout.html" %}
+
+{% block title %}
+{% endblock %}
+
+{% block main %}
+<div class="container mybg mb-2">
+    <div class="row justify-content-center align-items-center imgfltr resizemain">
+        <img src="/static/spellb.png" alt="a spellbook" class="col-md-2" style="min-width: 65px; width:13%;">
+        <span class="display-6 col-md-10 colorbr" style="min-width: 163px">Filtrar Magias Arcanas</span>
+    </div>
+</div>
+<form action="/arcana" method="post" class="mybgd container">
+    <div class="row justify-content-between">
+        <select aria-label="Default select" class="col-md-2 mybtn text-center colorbr" id="filter" name="filter">
+            <optgroup label="Por círculo">
+                <option value="" disabled selected hidden>Por círculo</option>
+                <option value="1">1º</option>
+                <option value="2">2º</option>
+                <option value="3">3º</option>
+                <option value="4">4º</option>
+                <option value="5">5º</option>
+            </optgroup>
+        </select>
+        <input autocomplete="off" autofocus="" class="col-md-7 mybgf mybtn1" name="sname"
+            placeholder="Pesquisar em magias" type="text">
+        <button class="col-md-2 mybtn colorbr" type="submit" id="liveAlertBtn">Filtrar</button>
+    </div>
+</form>
+<div class="container mytable" id="cont">
+    <div class="row mytabler justify-content-around rowstyletop align-items-center">
+        <div class="col prio1 colstyle">Círculo</div>
+        <div class="col-2 prio2 colstyle">Magia</div>
+        <div class="col prio3 colstyle">Escola</div>
+        <div class="col prio4 colstyle">Execução</div>
+        <div class="col prio5 colstyle">Alcance</div>
+        <div class="col-1 prio6 colstyle">Área</div>
+        <div class="col prio7 colstyle">Duração</div>
+        <div class="col-3 prio8 colstyle">Descrição</div>
+        <div class="col prio9 colstyle">...</div>
+    </div>
+    {% for row in amagias %}
+    <div class="row mytabler justify-content-around rowstyle align-items-center" data-bs-toggle="collapse"
+        data-bs-target="#spell{{ loop.index }}" role="button">
+        <div class="col prio1 colstyle">{{ row.acircle }}</div>
+        <div class="col-2 prio2 prio2s colstyle">{{ row.aspell }}</div>
+        <div class="col prio3 colstyle">{{ row.aschool }}</div>
+        <div class="col prio4 colstyle">{{ row.exec }}</div>
+        <div class="col prio5 colstyle">{{ row.range }}</div>
+        <div class="col-1 prio6 colstyle">{{ row.area }}</div>
+        <div class="col prio7">{{ row.dura }}</div>
+        <div class="col-3 prio8 colstyle">{{ row.adesc }}</div>
+        <div class="col prio9 colstyle">...</div>
+    </div>
+    <span class="collapse" id="spell{{ loop.index0 + 1 }}">
+        <div class="col fulldesc">
+            {{ row.fdesc }}
+        </div>
+    </span>
+    {% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Principal
+{% endblock %}
+
+{% block main %}
+<div class="row row-cols-1">
+    <div class="col">
+        <div class="card">
+            <div class="card-body">
+                <img src="/static/logo.png" style="width: 20%; height: auto; border-radius: 40%">
+                <h5 class="card-title tormfont">Bem vindo ao banco de dados de magias de Tormenta 20.</h5>
+                <p class="card-text frontfont">Este banco de dados está divido em magias arcanas e divinas.<br> Todos os
+                    direitos são
+                    de propriedade dos autores, informação prestada sob <a href="/ogl">Open game license</a>.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
+<div class="container text-center">
+    <div class="row row-cols-md-2 g-4">
+        <div class="col align-items-center"></a>
+            <a href="/arcana" class="clrlnk">
+                <h5 class="card-title mylif">Magias arcanas</h5>
+            </a>
+        </div>
+        <div class="col align-items-center"></a>
+            <a href="/divina" class="clrlnk">
+                <h5 class="card-title mylif1">Magias Divinas</h5>
+            </a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
